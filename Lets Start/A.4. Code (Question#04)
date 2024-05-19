@@ -1,5 +1,7 @@
  // Question no 03
-// C++ program to Swap Values
+// Code 01
+// C++ program to Swap Values by using third variable
+
 #include <iostream>
 using namespace std;
 
@@ -10,6 +12,7 @@ int main()
     cout << "Value no 1 : " << value1 << endl;
     cout << "Value no 2 : " << value2 << endl;
 
+    // Main Algorithm
     temp = value1;
     value1 = value2;
     value2 = temp;
@@ -19,3 +22,27 @@ int main()
     cout << "Value no 2 : " << value2 << endl;
 	return 0;
 }
+
+ // Code 02
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int value1 = 10, value2 = 20, temp;
+    cout << "\n\t***** Before Swaping *****" << endl;
+    cout << "Value no 1 : " << value1 << endl;
+    cout << "Value no 2 : " << value2 << endl;
+
+    // Using different algorithm
+    value2 = value1 + value2;
+    value1 = value2 - value1;
+    value2 = value2 - value1;
+
+    cout << "\n\t***** After Swaping *****" << endl;
+    cout << "Value no 1 : " << value1 << endl;
+    cout << "Value no 2 : " << value2 << endl;
+	return 0;
+}
+
+ 
