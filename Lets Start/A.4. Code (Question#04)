@@ -1,1 +1,21 @@
-// Question no 04
+ // Question no 03
+// C++ program to Swap Values
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int value1 = 10, value2 = 20, temp;
+    cout << "\n\t***** Before Swaping *****" << endl;
+    cout << "Value no 1 : " << value1 << endl;
+    cout << "Value no 2 : " << value2 << endl;
+
+    temp = value1;
+    value1 = value2;
+    value2 = temp;
+
+    cout << "\n\t***** After Swaping *****" << endl;
+    cout << "Value no 1 : " << value1 << endl;
+    cout << "Value no 2 : " << value2 << endl;
+	return 0;
+}
