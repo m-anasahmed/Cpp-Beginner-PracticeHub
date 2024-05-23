@@ -1,10 +1,4 @@
-/* 6.	Write a Program to Find Compound Interest. In this problem, you have to write a program that calculates and prints the compound interest for the given Principle, Rate of Interest, and Time.
-For Example,
-Principle = 25000 
-Rate = 12%
-Time = 5 Years
- */
-
+// Code 01
 #include<iostream>
 #include<cmath>
 using namespace std;
@@ -24,4 +18,5 @@ int main()
     double CI = A - principle;
 
     cout << "Compound Interest : " << CI << endl;
+    return 0;
 }
