@@ -67,3 +67,28 @@ int main()
 }
 
 // Code 03
+// To find largest among three numbers
+// using temporary variable
+#include <iostream>
+using namespace std;
+
+int main()
+{
+	int num1, num2, num3;
+    cout << "Enter the number :" << endl;
+    cin >> num1 >> num2 >> num3;
+
+	// temporary variable where we assumed a is max
+	int max = num1;
+	
+	if (max < num2){
+	    max = num2;
+	} 
+	if (max < num3){
+	    max = num3;
+	}
+	cout << max << " is the maximum out of " << num1 << ", " << num2 << ", " << num3 << endl;
+	return 0;
+}
+
+// Code 04
