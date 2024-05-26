@@ -92,3 +92,25 @@ int main()
 }
 
 // Code 04
+// To find the greatest of three
+// numbers using In-built function max()
+// We use max() by using algorithm header file.
+#include <iostream>
+#include <algorithm>
+using namespace std;
+
+int main()
+{
+	int num1, num2, num3;
+	num1 = 10, num2 = 30, num3 = 20;
+	
+	// Creating a variable to store value.
+	int answer;
+
+	answer = max(num1, max(num2, num3));
+	cout << answer << " is the largest" << endl;
+	return 0;
+}
+
+// If you want to run specific code, First comment out the other code block.
+// Practice each question to understand logic in details.
