@@ -29,3 +29,38 @@ int main()
 	return 0;
 }
 
+//------------------------------------------------------------------------------------
+
+// Code 02
+// Another way of finding Prime Number
+#include <iostream>
+using namespace std;
+
+bool isPrime(int number) {
+    if (number <= 1) {
+        return false;
+    }
+    for (int i = 2; i * i <= number; ++i) {
+        if (number % i == 0) {
+            return false;
+        }
+    }
+    return true;
+}
+
+int main() {
+    int number;
+    cout << "Enter a number to check if it's prime: ";
+    cin >> number;
+    
+    if (isPrime(number)) {
+        cout << number << " is a prime number." << endl;
+    } else {
+        cout << number << " is not a prime number." << endl;
+    }
+    
+    return 0;
+}
+
+//X----------------------X-------------------------X---------------------------X
+// To run specific code, Firstly comment out the other code block.
