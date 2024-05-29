@@ -40,4 +40,48 @@ int main()
 	return 0;
 }
 
+//--------------------------------------------------------------------------------------------------------
+
+// Code 02
+#include <iostream>
+using namespace std;
+
+int main() {
+    double num1, num2;
+    char operation;
+
+    // Getting input from the user
+    cout << "Enter two numbers separated by space: ";
+    cin >> num1 >> num2;
+
+    // Getting the operation from the user
+    cout << "Enter 'a' for addition, 's' for subtraction, 'm' for multiplication, 'd' for division: ";
+    cin >> operation;
+
+    // Performing the operation based on user input
+    switch (operation) {
+        case 'a':
+            cout << "Result: " << num1 + num2 << endl;
+            break;
+        case 's':
+            cout << "Result: " << num1 - num2 << endl;
+            break;
+        case 'm':
+            cout << "Result: " << num1 * num2 << endl;
+            break;
+        case 'd':
+            if (num2 != 0) {
+                cout << "Result: " << num1 / num2 << endl;
+            } else {
+                cout << "Error: Division by zero is not allowed." << endl;
+            }
+            break;
+        default:
+            cout << "Error: Invalid operation entered." << endl;
+            break;
+    }
+
+    return 0;
+}
+
 // X===============================X===============================X=============================x
