@@ -96,3 +96,49 @@ Reversed Number: 1234321
 
 Output : "1234321 Yes! its a palindromw"
 */
+
+//--------------------------------------------------------------------------------------------------------
+
+// Code 02
+// Making a function to check Palindrome.
+#include <iostream>
+using namespace std;
+
+// Function to reverse the digits of a number
+int reverseNumber(int num) {
+    int reversedNum = 0, remainder;
+    
+    // Algorithm for reversing the number using a while loop
+    while (num != 0) {
+        remainder = num % 10;
+        reversedNum = reversedNum * 10 + remainder;
+        num /= 10;
+    }
+    return reversedNum;
+}
+
+int main() {
+    int num, originalNum;
+    
+    cout << "Enter a number: ";
+    cin >> num;
+    
+    // Store the original number
+    originalNum = num; 
+    
+    // Get the reversed number from function.
+    int reversedNum = reverseNumber(num);
+    
+    // Checking if the original number and the reversed number are the same
+    if (originalNum == reversedNum) {
+        cout << originalNum << " is a palindrome." << endl;
+    } else {
+        cout << originalNum << " is not a palindrome." << endl;
+    }
+    
+    return 0;
+}
+
+//-------------------------------------------------------------------------------------------------------
+
+// Code 03
