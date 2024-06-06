@@ -239,36 +239,45 @@ int main()
 using namespace std;
 
 // Function to check palindrome
-int checkPalindrome(string str)
-{ 
-	// Calculating string length
-	int len = str.length();
-
-	// Traversing through the string 
+int palindromechecker( string st)
+{
+    // Calculating string length
+    int len = st.length();
+    
+    // Traversing through the string 
 	// upto half its length
-	for (int i = 0; i < len / 2; i++) 
-	{	 
-		// Comparing i th character from 
+	for (int i = 0; i < len / 2; i++){
+	    // Comparing i th character from 
 		// starting and len-i th character 
 		// from end
-		if (str[i] != str[len - i - 1])
-			return false;
+		if(st[i] != st[len - i - 1]){
+		    return false;
+		}
 	}
-
+	
 	// If the above loop doesn't return 
 	// then it is palindrome
 	return true;
 }
 
-// Driver Code
 int main()
-{ 
-	// Taking number as string
-	string st = "121";
-	if (checkPalindrome(st) == true)
-		cout << "Yes";
-	else
-		cout << "No";
-	return 0;
+{
+    // Taking number as string
+    string st;
+    cout << " ****** PALINDROME CHECKER ****** " << endl;
+    cout << "Enter the anything to check wheather it is palindrome or not : ";
+    cin >> st;
+    
+    if (palindromechecker(st) == true){
+        cout << st << " is a Palindrome." << endl;
+    }else{
+        cout << st << " is not a Palindrome." << endl;
+    }
+    
+    return 0;
 }
-// This code is written by vikkycirus
+
+// X---------------------------------X-----------------------------------X--------------------------------X
+
+// To run the specific code, Firstly comment out the code block.
+// Must practice of above code.
